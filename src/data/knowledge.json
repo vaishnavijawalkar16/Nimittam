@@ -1,0 +1,401 @@
+{
+    "dataset_version": "1.2",
+    "entries": [
+      {
+        "id": "001",
+        "title": "Main Entrance Gate",
+        "category": "place",
+        "tags": ["entrance", "main gate", "security", "arrival", "welcome", "campus entry", "checkpoint"],
+        "content": "The Main Entrance Gate is the primary and official entry point of Namokar Tirth through which every visitor, devotee, and guest enters the sacred campus. This gate symbolizes the beginning of a spiritual journey and marks the transition from the outside world into a peaceful religious environment. Security personnel are stationed here to ensure safety, discipline, and smooth entry, while directional boards and information signage help visitors easily understand the layout of the campus.",
+        "suggested_questions": [
+          "Where is the main entrance of Namokar Tirth?",
+          "Is there security at the entrance?"
+        ]
+      },
+      {
+        "id": "002",
+        "title": "Parking Lot",
+        "category": "facility",
+        "tags": ["parking", "vehicle parking", "bus parking", "two wheeler", "wheelchair access", "visitor facility", "accessibility"],
+        "content": "The parking lot at Namokar Tirth provides organized and spacious parking facilities for cars, buses, and two-wheelers, ensuring smooth vehicle management even during large gatherings and festivals. It is designed with wheelchair-friendly pathways so that elderly and physically challenged visitors can move comfortably. Clear walking routes connect the parking area to the main entrance, and security staff assist visitors in parking and traffic movement.",
+        "suggested_questions": [
+          "Is parking available?",
+          "Is parking wheelchair accessible?"
+        ]
+      },
+      {
+        "id": "003",
+        "title": "Reception and Administration Office",
+        "category": "facility",
+        "tags": ["reception", "administration", "helpdesk", "visitor support", "management", "office"],
+        "content": "The Reception and Administration Office serves as the central helpdesk for visitors at Namokar Tirth, providing essential information about temples, facilities, timings, and ongoing events. It manages all administrative and operational activities of the campus and assists pilgrims with accommodation, permissions, and special services. The staff ensures that visitors receive proper guidance for a smooth, comfortable, and spiritually fulfilling visit.",
+        "suggested_questions": [
+          "Where can I get help or information?",
+          "Where is the admin office?"
+        ]
+      },
+      {
+        "id": "004",
+        "title": "Information Center",
+        "category": "facility",
+        "tags": ["information", "guide center", "tour assistance", "history", "help", "visitor education"],
+        "content": "The Information Center helps visitors understand the spiritual significance, history, and overall layout of Namokar Tirth. It provides guidance about temples, statues, meditation halls, and other facilities within the campus. Educational materials and audio guides are available here, making it an ideal starting point for guided tours and talking tour experiences.",
+        "suggested_questions": [
+          "Where can I get information?",
+          "Is there a guide center?"
+        ]
+      },
+      {
+        "id": "005",
+        "title": "Samavsharan Temple (Bolta Samavsharan)",
+        "category": "temple",
+        "tags": ["samavsharan", "bolta samavsharan", "audio temple", "tirthankara preaching", "spiritual discourse", "jain philosophy"],
+        "content": "The Samavsharan Temple represents the divine preaching assembly of Jain Tirthankaras, where spiritual teachings are delivered to all living beings without discrimination. The Bolta Samavsharan uniquely presents these teachings through audio narration, explaining core Jain principles such as non-violence, truth, compassion, and liberation. This temple offers an immersive spiritual and educational experience, especially suited for modern visitors.",
+        "suggested_questions": [
+          "What is Samavsharan?",
+          "Why is it called Bolta Samavsharan?"
+        ]
+      },
+      {
+        "id": "006",
+        "title": "Panch Parmeshthi Temples Complex",
+        "category": "temple",
+        "tags": ["panch parmeshthi", "arihant", "siddha", "acharya", "upadhyay", "sadhu", "five supreme beings", "jain worship"],
+        "content": "The Panch Parmeshthi Temples Complex is dedicated to the five supreme spiritual beings of Jainism, namely Arihant, Siddha, Acharya, Upadhyay, and Sadhu. Each section of the complex represents a unique spiritual role and responsibility within Jain philosophy. This area helps devotees understand the spiritual hierarchy of Jain dharma and serves as a place for worship, learning, and deep reflection.",
+        "suggested_questions": [
+          "What are Panch Parmeshthi?",
+          "What is the significance of this complex?"
+        ]
+      },
+      {
+        "id": "007",
+        "title": "46-foot Arihant Parmeshthi Statue",
+        "category": "statue",
+        "tags": ["arihant", "parmeshthi", "giant statue", "enlightenment", "victory over karma", "spiritual symbol"],
+        "content": "The 46-foot tall Arihant Parmeshthi statue is a powerful symbol of enlightenment and spiritual victory at Namokar Tirth. Arihants are enlightened beings who have conquered inner enemies such as anger, ego, and attachment. This grand statue inspires devotees to follow the path of discipline, purity, and self-realization and provides a peaceful space for prayer and contemplation.",
+        "suggested_questions": [
+          "How tall is the Arihant statue?",
+          "What does Arihant mean?"
+        ]
+      },
+      {
+        "id": "008",
+        "title": "36-foot Siddha Parmeshthi Statue",
+        "category": "statue",
+        "tags": ["siddha", "parmeshthi", "liberated soul", "moksha", "giant statue", "spiritual liberation"],
+        "content": "The Siddha Parmeshthi statue represents souls who have attained complete liberation from the cycle of birth and death. Standing as a symbol of moksha, the statue reminds devotees of the ultimate goal of Jain philosophy. It inspires spiritual seekers to reflect on freedom from karma and the pursuit of eternal peace.",
+        "suggested_questions": [
+          "Who are Siddhas?",
+          "What is the height of the Siddha statue?"
+        ]
+      },
+      {
+        "id": "009",
+        "title": "Acharya Statue Area",
+        "category": "statue",
+        "tags": ["acharya", "spiritual teacher", "discipline", "jain leadership", "guidance"],
+        "content": "The Acharya Statue Area honors Jain spiritual leaders who guide monks and lay followers on the path of discipline and righteous conduct. Acharyas play a crucial role in maintaining spiritual order within the Jain community. This statue symbolizes leadership, responsibility, and dedication to religious principles.",
+        "suggested_questions": [
+          "Who is an Acharya?",
+          "What is their role?"
+        ]
+      },
+      {
+        "id": "010",
+        "title": "Upadhyay Statue Area",
+        "category": "statue",
+        "tags": ["upadhyay", "knowledge", "scriptures", "teacher", "jain education"],
+        "content": "The Upadhyay Statue Area represents Jain scholars and teachers who preserve, study, and teach sacred scriptures. Upadhyays symbolize the importance of knowledge, wisdom, and education in spiritual growth. This place reminds visitors that learning and teaching are essential paths toward liberation.",
+        "suggested_questions": [
+          "Who is an Upadhyay?",
+          "Why are they important?"
+        ]
+      },
+      {
+        "id": "011",
+        "title": "Sadhu Statue Area",
+        "category": "statue",
+        "tags": ["sadhu", "renunciation", "monk", "ascetic life", "self-discipline"],
+        "content": "The Sadhu Statue Area represents Jain monks who follow a life of renunciation, simplicity, and strict discipline. Sadhus practice non-attachment and self-control while dedicating their lives to spiritual progress. This statue inspires visitors to reflect on sacrifice, ethical living, and inner purity.",
+        "suggested_questions": [
+          "Who are Jain Sadhus?",
+          "What do they represent?"
+        ]
+      },
+      {
+        "id": "012",
+        "title": "Choubisi Jinalaya",
+        "category": "temple",
+        "tags": ["choubisi", "24 tirthankaras", "jinalaya", "main temple", "prayer", "meditation"],
+        "content": "Choubisi Jinalaya is a sacred temple complex dedicated to all 24 Jain Tirthankaras, each representing a unique era of spiritual guidance. It is one of the most important worship spaces within Namokar Tirth, where devotees perform daily rituals, prayers, and meditation. The temple holds immense religious and cultural significance.",
+        "suggested_questions": [
+          "What is Choubisi Jinalaya?",
+          "Who are the 24 Tirthankaras?"
+        ]
+      },
+      {
+        "id": "013",
+        "title": "Navagraha Temple Area",
+        "category": "temple",
+        "tags": ["navagraha", "nine planets", "cosmic influence", "spiritual balance", "reflection"],
+        "content": "The Navagraha Temple Area symbolizes the nine planetary influences and their connection with cosmic order and time cycles. This place encourages devotees to reflect on karma, destiny, and balance in life. It connects spiritual understanding with universal harmony and awareness.",
+        "suggested_questions": [
+          "What is Navagraha Temple?",
+          "What does it represent?"
+        ]
+      },
+      {
+        "id": "014",
+        "title": "Adinath Temple",
+        "category": "temple",
+        "tags": ["adinath", "rishabhdev", "first tirthankara", "heritage", "under construction"],
+        "content": "The Adinath Temple is dedicated to Lord Rishabhdev, the first Jain Tirthankara, who established the foundation of Jain philosophy and civilization. This temple represents the origin of spiritual order and human values. It is currently under construction or in the proposed stage and will become a major spiritual attraction once completed.",
+        "suggested_questions": [
+          "Who is Adinath?",
+          "Is this temple completed?"
+        ]
+      },
+      {
+        "id": "015",
+        "title": "Aradhana and Research Center",
+        "category": "facility",
+        "tags": ["namokar mantra", "research", "meditation", "jain studies", "spiritual learning", "education"],
+        "content": "The Aradhana and Research Center focuses on the study, chanting, and deep understanding of the Namokar Mantra. It promotes Jain philosophy through meditation, research, and spiritual learning. Scholars, monks, and seekers use this center to preserve and expand Jain knowledge.",
+        "suggested_questions": [
+          "What research is done here?",
+          "What is Namokar Mantra?"
+        ]
+      },
+      {
+        "id": "016",
+        "title": "Dharamshala Buildings",
+        "category": "accommodation",
+        "tags": ["dharamshala", "stay", "pilgrim accommodation", "rooms", "guest house"],
+        "content": "The Dharamshala buildings provide clean, simple, and affordable accommodation for visitors and pilgrims staying at Namokar Tirth. Various room options are available for short and long stays, offering a peaceful environment for rest and spiritual rejuvenation.",
+        "suggested_questions": [
+          "Is accommodation available?",
+          "What types of rooms exist?"
+        ]
+      },
+      {
+        "id": "017",
+        "title": "Bhojanshala",
+        "category": "facility",
+        "tags": ["bhojanshala", "jain food", "pure veg", "community dining", "satvik food"],
+        "content": "The Bhojanshala serves pure Jain vegetarian meals prepared without onion, garlic, or root vegetables, strictly following the principles of non-violence. The kitchen maintains high hygiene standards and provides satvik food to visitors and pilgrims, promoting physical purity and spiritual discipline.",
+        "suggested_questions": [
+          "Is food available?",
+          "What kind of food is served?"
+        ]
+      },
+      {
+        "id": "018",
+        "title": "Main Prayer Hall",
+        "category": "hall",
+        "tags": ["prayer hall", "meditation", "silence", "spiritual gathering", "peace"],
+        "content": "The Main Prayer Hall is a peaceful space used for collective prayers, meditation sessions, and spiritual gatherings. It provides a calm and silent atmosphere that supports inner reflection and devotion while accommodating large groups of devotees.",
+        "suggested_questions": [
+          "Where do group prayers happen?",
+          "Can visitors meditate here?"
+        ]
+      },
+      {
+        "id": "019",
+        "title": "Assembly and Function Hall",
+        "category": "hall",
+        "tags": ["events", "functions", "religious programs", "marriage hall", "gatherings"],
+        "content": "The Assembly and Function Hall is used for religious programs, cultural events, and marriage ceremonies. It can accommodate large gatherings and supports community activities that strengthen social and spiritual connections among devotees.",
+        "suggested_questions": [
+          "Are events organized here?",
+          "Can marriages be held?"
+        ]
+      },
+      {
+        "id": "020",
+        "title": "Gardens and Lawn Areas",
+        "category": "garden",
+        "tags": ["garden", "nature", "peace", "relaxation", "meditation space"],
+        "content": "The gardens and lawn areas enhance the natural beauty of Namokar Tirth and provide a serene environment for relaxation and meditation. Surrounded by greenery, these spaces encourage mindfulness and inner peace while connecting visitors with nature.",
+        "suggested_questions": [
+          "Are there gardens?",
+          "Can visitors relax here?"
+        ]
+      },
+      {
+        "id": "021",
+        "title": "Parikrama Path",
+        "category": "path",
+        "tags": ["parikrama", "circumambulation", "spiritual walk", "ritual path", "devotion"],
+        "content": "The Parikrama Path surrounds the main temple complex and is used by devotees for circumambulation as a spiritual ritual. Walking on this path symbolizes devotion, humility, and mindful movement, making it an important spiritual practice at Namokar Tirth.",
+        "suggested_questions": [
+          "What is Parikrama?",
+          "Where is the Parikrama Path?"
+        ]
+      },
+      {
+        "id": "022",
+        "title": "Helipad Site",
+        "category": "proposed",
+        "tags": ["helipad", "future infrastructure", "emergency access", "vip visits"],
+        "content": "The Helipad Site is a proposed future infrastructure planned for emergency services and special or dignitary visits. Although it is not currently operational, it reflects the long-term development vision of Namokar Tirth.",
+        "suggested_questions": [
+          "Is there a helipad?",
+          "Is it operational?"
+        ]
+      },
+      {
+        "id": "023",
+        "title": "Boating Area",
+        "category": "proposed",
+        "tags": ["boating", "recreation", "future development", "water body"],
+        "content": "The Boating Area is a proposed recreational feature intended to enhance the visitor experience at Namokar Tirth. Planned as a calm and reflective space, it represents future expansion aimed at combining spiritual peace with natural surroundings.",
+        "suggested_questions": [
+          "Is boating available?",
+          "Is this area developed?"
+        ]
+      },
+      {
+        "id": "024",
+        "title": "Security Post and Gate House",
+        "category": "security",
+        "tags": ["security", "safety", "monitoring", "control point", "discipline"],
+        "content": "The Security Post and Gate House play a vital role in maintaining safety and discipline throughout the Namokar Tirth campus. Security personnel monitor visitor movement, regulate entry points, and handle emergency situations, ensuring a peaceful and secure environment for all devotees.",
+        "suggested_questions": [
+          "Is the campus secure?",
+          "Where are security posts located?"
+        ]
+      },
+  
+      
+      {
+        "id": "JV2-001",
+        "title": "Jainism",
+        "category": "religion",
+        "tags": [
+          "jainism",
+          "ancient indian religion",
+          "spiritual philosophy",
+          "non violence",
+          "moksha",
+          "self discipline"
+        ],
+        "content": "Jainism is one of the most ancient religions originating in India and is based on the principles of non-violence, self-discipline, truth, and spiritual purification. It teaches that every living being possesses an eternal soul and that liberation, known as moksha, can be achieved by eliminating karmic bondage through right faith, right knowledge, and right conduct. Jainism does not believe in a creator God and emphasizes personal effort, ethical living, meditation, and self-control as the path to spiritual freedom.",
+        "suggested_questions": [
+          "What is Jainism?",
+          "What are the core principles of Jainism?",
+          "What is the goal of Jain philosophy?"
+        ]
+      },
+      {
+        "id": "JV2-002",
+        "title": "Bhagwan Mahavir",
+        "category": "tirthankara",
+        "tags": [
+          "mahavir",
+          "24th tirthankara",
+          "vardhamana",
+          "jain spiritual leader",
+          "keval gyan"
+        ],
+        "content": "Bhagwan Mahavir, also known as Vardhamana, was the 24th and last Tirthankara of the present Jain time cycle. He renounced worldly life at the age of thirty and practiced intense austerities for twelve years before attaining Keval Gyan, or absolute knowledge. Mahavir’s teachings emphasized non-violence, truth, non-attachment, and multiple viewpoints, guiding humanity toward spiritual liberation and ethical living.",
+        "suggested_questions": [
+          "Who was Bhagwan Mahavir?",
+          "Why is Mahavir important in Jainism?",
+          "What did Mahavir teach?"
+        ]
+      },
+      {
+        "id": "JV2-003",
+        "title": "Ahimsa (Non-Violence)",
+        "category": "jain_principle",
+        "tags": [
+          "ahimsa",
+          "non violence",
+          "jain ethics",
+          "compassion",
+          "spiritual discipline"
+        ],
+        "content": "Ahimsa, or non-violence, is the most fundamental principle of Jainism and applies to thoughts, speech, and actions. Jains believe that all living beings, including the smallest organisms, possess a soul and deserve respect and compassion. This principle influences every aspect of Jain life, including diet, profession, daily conduct, and spiritual practice, making Ahimsa a complete way of living rather than a limited moral rule.",
+        "suggested_questions": [
+          "What does Ahimsa mean?",
+          "Why is Ahimsa important in Jainism?",
+          "How do Jains practice non-violence?"
+        ]
+      },
+      {
+        "id": "JV2-004",
+        "title": "Karma in Jainism",
+        "category": "philosophical_concept",
+        "tags": [
+          "karma",
+          "jain philosophy",
+          "soul bondage",
+          "cause and effect",
+          "spiritual purification"
+        ],
+        "content": "In Jainism, karma is understood as a subtle form of matter that attaches itself to the soul due to thoughts, emotions, and actions. These karmic particles bind the soul and are responsible for suffering, rebirth, and limitations. Through disciplined living, meditation, penance, and ethical behavior, a person can stop new karma from accumulating and gradually shed existing karma to attain liberation.",
+        "suggested_questions": [
+          "What is karma according to Jainism?",
+          "How does karma affect the soul?",
+          "How can karma be removed?"
+        ]
+      },
+      {
+        "id": "JV2-005",
+        "title": "Moksha (Liberation)",
+        "category": "spiritual_goal",
+        "tags": [
+          "moksha",
+          "liberation",
+          "soul freedom",
+          "keval gyan",
+          "jain ultimate goal"
+        ],
+        "content": "Moksha is the ultimate goal of Jain philosophy and refers to the complete liberation of the soul from the cycle of birth and death. A soul that attains moksha becomes free from all karmic bondage and exists in a state of infinite knowledge, perception, bliss, and power. Jainism teaches that moksha can be achieved only through personal effort, self-discipline, and spiritual realization.",
+        "suggested_questions": [
+          "What is moksha in Jainism?",
+          "How does one attain moksha?",
+          "What happens to the soul after liberation?"
+        ]
+      },
+      {
+        "id": "JV2-006",
+        "title": "Digambara and Shvetambara",
+        "category": "jain_sects",
+        "tags": [
+          "digambara",
+          "shvetambara",
+          "jain sects",
+          "monastic traditions",
+          "jain history"
+        ],
+        "content": "Jainism is mainly divided into two major sects known as Digambara and Shvetambara, which differ in monastic practices, attire, and interpretation of scriptures. Digambara monks practice complete renunciation including nudity, while Shvetambara monks wear white clothing. Despite these differences, both sects follow the same core principles, ethical values, and reverence for the Tirthankaras.",
+        "suggested_questions": [
+          "What are the two main Jain sects?",
+          "What is the difference between Digambara and Shvetambara?",
+          "Do both sects follow the same teachings?"
+        ]
+      },
+      {
+        "id": "JV2-007",
+        "title": "Sallekhana",
+        "category": "jain_practice",
+        "tags": [
+          "sallekhana",
+          "jain vow",
+          "fasting",
+          "spiritual purification",
+          "end of life practice"
+        ],
+        "content": "Sallekhana is a voluntary and spiritually disciplined Jain practice observed at the end of life when death is inevitable. It involves gradually reducing food and physical attachments while maintaining mental calmness and spiritual awareness. Sallekhana is considered an act of purification and acceptance rather than despair, and it is performed without fear, desire, or emotional disturbance.",
+        "suggested_questions": [
+          "What is Sallekhana?",
+          "Is Sallekhana considered suicide?",
+          "Why is Sallekhana practiced in Jainism?"
+        ]
+      }
+    
+  
+    ]
+  }
+  
