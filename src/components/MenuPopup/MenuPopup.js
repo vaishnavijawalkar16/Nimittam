@@ -8,12 +8,16 @@ import {
 } from 'react-native';
 import styles from './MenuPopup.styles';
 
+import { useTheme } from '../../theme/ThemeContext';
+
 export default function MenuPopup({
   visible,
   items,
   onClose,
   align = 'left'
 }) {
+  const { theme } = useTheme();
+
   return (
     <Modal
       visible={visible}
@@ -29,7 +33,7 @@ export default function MenuPopup({
           align === 'left' ? styles.left : styles.right
         ]}
       >
-        <View style={styles.menu}>
+        <View style={[styles.menu, { backgroundColor: theme.topBar }]}>
           {items.map((item, i) => (
             <TouchableOpacity
               key={i}
@@ -43,7 +47,7 @@ export default function MenuPopup({
                 onClose();
               }}
             >
-              <Text style={styles.text}>{item.label}</Text>
+              <Text style={[styles.text, { color: theme.text }]}>{item.label}</Text>
             </TouchableOpacity>
           ))}
         </View>
@@ -51,3 +55,4 @@ export default function MenuPopup({
     </Modal>
   );
 }
+

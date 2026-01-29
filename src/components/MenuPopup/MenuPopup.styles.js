@@ -6,7 +6,8 @@ export default StyleSheet.create({
   },
   overlay: {
     position: 'absolute',
-    top: 56
+    top: 56,
+    zIndex: 1000
   },
   left: {
     left: 12
@@ -18,7 +19,8 @@ export default StyleSheet.create({
     backgroundColor: '#F2ECF7',
     borderRadius: 8,
     minWidth: 200,
-    elevation: 10
+    elevation: 10,
+    zIndex: 1001
   },
   item: {
     padding: 14

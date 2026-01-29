@@ -1,6 +1,7 @@
 apply plugin: "com.android.application"
 apply plugin: "org.jetbrains.kotlin.android"
 apply plugin: "com.facebook.react"
+apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
 
 /**
  * This is the configuration block to customize your React Native Android app.
@@ -55,9 +56,15 @@ react {
 }
 
 /**
+ * Set this to true to create four separate APKs instead of one,
+ * reducing the size for each user's device.
+ */
+def enableSeparateBuildPerCPUArchitecture = true
+
+/**
  * Set this to true to Run Proguard on Release builds to minify the Java bytecode.
  */
-def enableProguardInReleaseBuilds = false
+def enableProguardInReleaseBuilds = true
 
 /**
  * The preferred build flavor of JavaScriptCore (JSC)
@@ -73,7 +80,6 @@ def enableProguardInReleaseBuilds = false
 def jscFlavor = 'io.github.react-native-community:jsc-android:2026004.+'
 
 android {
-    ndkVersion rootProject.ext.ndkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
@@ -83,7 +89,16 @@ android {
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
-        versionName "1.0"
+        versionName "NimittamV0.1"
+    }
+
+    splits {
+        abi {
+            reset()
+            enable enableSeparateBuildPerCPUArchitecture
+            universalApk false  // If true, also generate a universal APK
+            include "armeabi-v7a", "x86", "arm64-v8a", "x86_64"
+        }
     }
     signingConfigs {
         debug {
@@ -103,6 +118,19 @@ android {
             signingConfig signingConfigs.debug
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+            
+            // Custom APK rename
+            applicationVariants.all { variant ->
+                variant.outputs.all { output ->
+                    def abi = output.getFilter(com.android.build.OutputFile.ABI)
+                    def name = "NimittamV0.1"
+                    if (abi != null) {
+                        outputFileName = "${name}-${abi}.apk"
+                    } else {
+                        outputFileName = "${name}-universal.apk"
+                    }
+                }
+            }
         }
     }
 }
@@ -117,4 +145,3 @@ dependencies {
         implementation jscFlavor
     }
 }
-apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"

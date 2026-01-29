@@ -1,11 +1,12 @@
 buildscript {
     ext {
-        buildToolsVersion = "36.0.0"
+        // These are kept here for buildscript classpath resolution if needed
+        buildToolsVersion = "34.0.0"
         minSdkVersion = 24
-        compileSdkVersion = 36
-        targetSdkVersion = 36
-        ndkVersion = "27.1.12297006"
+        compileSdkVersion = 34
+        targetSdkVersion = 34
         kotlinVersion = "2.1.20"
+        ndkVersion = "27.1.12297006"
     }
     repositories {
         google()
@@ -16,6 +17,16 @@ buildscript {
         classpath("com.facebook.react:react-native-gradle-plugin")
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin")
     }
+}
+
+// Make these properties visible to subprojects via rootProject.ext
+ext {
+    buildToolsVersion = "34.0.0"
+    minSdkVersion = 24
+    compileSdkVersion = 34
+    targetSdkVersion = 34
+    ndkVersion = "27.1.12297006"
+    kotlinVersion = "2.1.20"
 }
 
 apply plugin: "com.facebook.react.rootproject"

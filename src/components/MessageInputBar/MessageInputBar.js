@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { View, TextInput, TouchableOpacity, Alert } from 'react-native';
+import { View, TextInput, TouchableOpacity, PermissionsAndroid, Platform } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
+import { launchImageLibrary, launchCamera } from 'react-native-image-picker';
 import styles from './MessageInputBar.styles';
 import { useTheme } from '../../theme/ThemeContext';
-import { pickFromCamera, pickFromGallery } from '../../utils/imagePicker';
 
-export default function MessageInputBar({ onSend, hasModel }) {
+export default function MessageInputBar({ onSend }) {
   const { theme } = useTheme();
   const [text, setText] = useState('');
 
@@ -20,42 +20,107 @@ export default function MessageInputBar({ onSend, hasModel }) {
     setText('');
   };
 
-  const onAddPress = async () => {
-    const image = await pickFromGallery();
-    if (image) {
-      onSend({
-        type: 'image',
-        uri: image.uri,
-        name: image.fileName
-      });
+  const pickImage = async () => {
+    if (Platform.OS === 'android') {
+      const permission = Platform.Version >= 33 
+        ? PermissionsAndroid.PERMISSIONS.READ_MEDIA_IMAGES 
+        : PermissionsAndroid.PERMISSIONS.READ_EXTERNAL_STORAGE;
+        
+      try {
+        const granted = await PermissionsAndroid.request(permission);
+        if (granted !== PermissionsAndroid.RESULTS.GRANTED) {
+          console.log("Storage/Media permission denied");
+          return;
+        }
+      } catch (err) {
+        console.warn(err);
+        return;
+      }
     }
+
+    const options = {
+      mediaType: 'photo',
+      includeBase64: false,
+      maxHeight: 2000,
+      maxWidth: 2000,
+    };
+
+    launchImageLibrary(options, (response) => {
+      if (response.didCancel) {
+        console.log('User cancelled image picker');
+      } else if (response.errorMessage) {
+        console.log('ImagePicker Error: ', response.errorMessage);
+      } else if (response.assets && response.assets.length > 0) {
+        const source = { uri: response.assets[0].uri };
+        onSend({
+          type: 'image',
+          value: source.uri
+        });
+      }
+    });
   };
 
-  const onCameraPress = async () => {
-    const image = await pickFromCamera();
-    if (image) {
-      onSend({
-        type: 'image',
-        uri: image.uri,
-        name: image.fileName
-      });
+
+  const takePhoto = async () => {
+    if (Platform.OS === 'android') {
+      try {
+        const granted = await PermissionsAndroid.request(
+          PermissionsAndroid.PERMISSIONS.CAMERA,
+          {
+            title: "App Camera Permission",
+            message: "App needs access to your camera ",
+            buttonNeutral: "Ask Me Later",
+            buttonNegative: "Cancel",
+            buttonPositive: "OK"
+          }
+        );
+        if (granted !== PermissionsAndroid.RESULTS.GRANTED) {
+          console.log("Camera permission denied");
+          return;
+        }
+      } catch (err) {
+        console.warn(err);
+        return;
+      }
     }
+
+    const options = {
+      mediaType: 'photo',
+      includeBase64: false,
+      maxHeight: 2000,
+      maxWidth: 2000,
+    };
+
+    launchCamera(options, (response) => {
+      if (response.didCancel) {
+        console.log('User cancelled camera');
+      } else if (response.errorMessage) {
+        console.log('Camera Error: ', response.errorMessage);
+      } else if (response.assets && response.assets.length > 0) {
+        const source = { uri: response.assets[0].uri };
+        onSend({
+          type: 'image',
+          value: source.uri
+        });
+      }
+    });
   };
+
 
   return (
     <View style={[styles.container, { backgroundColor: theme.inputBg }]}>
-      <TouchableOpacity onPress={onAddPress}>
-        <Icon name="add" size={24} color={theme.text} />
+      <TouchableOpacity onPress={pickImage}>
+        <Icon name="image" size={24} color="#6B4EFF" />
       </TouchableOpacity>
 
-      <TouchableOpacity onPress={onCameraPress}>
-        <Icon name="photo-camera" size={24} color={theme.text} />
+      <TouchableOpacity onPress={takePhoto}>
+        <Icon name="camera-alt" size={24} color="#6B4EFF" />
       </TouchableOpacity>
 
       <TextInput
-        style={[styles.input, { color: theme.text }]}
+        style={[styles.input, { color: '#000000' }]}
         placeholder="Message Nimittam..."
-        placeholderTextColor="#999"
+        placeholderTextColor="#666"
         value={text}
         onChangeText={setText}
         multiline
