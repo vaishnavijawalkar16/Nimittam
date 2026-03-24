@@ -6,12 +6,12 @@ import { useTheme } from '../../theme/ThemeContext';
 import { downloadModel, useSavedModel, abortDownload } from '../../services/modelService';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
-export default function TopBar({ onClearChat, occasion, onBack, onModelStatusChange }) {
+export default function TopBar({ onClearChat, occasion, onBack, onModelStatusChange, onLanguageChange }) {
   const { theme, toggleTheme } = useTheme();
 
   const [showMoreMenu, setShowMoreMenu] = useState(false);
   const [showLeftMenu, setShowLeftMenu] = useState(false);
-  const [downloadProgress, setDownloadProgress] = useState(null); // { percentage, written, total }
+  const [downloadProgress, setDownloadProgress] = useState(null); 
 
   const formatBytes = (bytes) => {
     if (bytes === 0) return '0 B';
@@ -21,10 +21,10 @@ export default function TopBar({ onClearChat, occasion, onBack, onModelStatusCha
     return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
   };
 
-  const startDownload = async () => {
+  const startDownload = async (modelId) => {
     try {
       setDownloadProgress({ percentage: 0, written: 0, total: 0 });
-      await downloadModel((progress) => {
+      await downloadModel(modelId, (progress) => {
         setDownloadProgress(progress);
       });
       setDownloadProgress(null);
@@ -123,18 +123,34 @@ export default function TopBar({ onClearChat, occasion, onBack, onModelStatusCha
           align="left"
           items={[
             {
-              label: 'Download Model',
-              onPress: startDownload
+              label: 'Download Gemma 3 (4B Vision)',
+              onPress: () => startDownload('gemma_vision')
             },
             {
-              label: 'Use Saved Model',
+              label: 'Download Smol Model (360M)',
+              onPress: () => startDownload('smollm')
+            },
+            {
+              label: 'Use Gemma 3 (4B Vision) 👀',
               onPress: async () => {
                 try {
-                  await useSavedModel();
-                  Alert.alert('Success', 'Model is now active.');
+                  await useSavedModel('gemma_vision');
+                  Alert.alert('Success', 'Gemma 3 Vision is now active. You can now use the camera!');
                   if (onModelStatusChange) onModelStatusChange();
                 } catch (e) {
-                  Alert.alert('Error', 'No saved model found. Please download first.');
+                  Alert.alert('Error', 'Gemma 3 Vision is not installed. Please download first.');
+                }
+              }
+            },
+            {
+              label: 'Use Smol Model',
+              onPress: async () => {
+                try {
+                  await useSavedModel('smollm');
+                  Alert.alert('Success', 'Smol Model is now active.');
+                  if (onModelStatusChange) onModelStatusChange();
+                } catch (e) {
+                  Alert.alert('Error', 'Smol Model is not installed. Please download first.');
                 }
               }
             }
@@ -153,6 +169,14 @@ export default function TopBar({ onClearChat, occasion, onBack, onModelStatusCha
               onPress: () => {
                 toggleTheme();
               }
+            },
+            {
+              label: 'Switch to Hindi',
+              onPress: () => onLanguageChange?.('Hindi')
+            },
+            {
+              label: 'Switch to English',
+              onPress: () => onLanguageChange?.('English')
             },
             ...(onClearChat ? [{
               label: 'Clear Chat',

@@ -107,42 +107,76 @@ export function isGeneralGreeting(query) {
   });
 }
 
-/**
- * Formats the prompt for the SmolLM2 model - "Nimittam" Persona
- */
-export function formatPrompt(question, context, isGreeting = false, occasionName = "this occasion") {
-  const persona = `You are "Nimittam", a simple, sweet, and wise spiritual guide for ${occasionName}. Your name is ALWAYS Nimittam.`;
+export function formatPrompt(question, context, isGreeting = false, occasionName = "this occasion", activeModelId = 'gemma_vision', isImage = false, targetLanguage = 'English') {
+  const isHindi = targetLanguage.toLowerCase() === 'hindi';
+  
+  const persona = `You are the Ai guide who will answer the questions. Your goal is to be helpful, wise, and concise. 
+IMPORTANT: Your entire response including suggested questions must be in ${targetLanguage}.`;
+
+  const isGemma = activeModelId.startsWith('gemma');
 
   if (isGreeting) {
-    return `<|im_start|>system
+    if (isGemma) {
+      return `<start_of_turn>user
+[SYSTEM INSTRUCTIONS]
 ${persona}
-- Greet with "Jai Jinendra" or a warm spiritual welcome as Nimittam.
+- Greet with a warm spiritual welcome as the Ai guide in ${targetLanguage}.
 - Be sweet, simple, and short.
-- Never use slogans like "Jai Namokara".
-- Never say "I am Namokar Tirth".
+- Never say "I am Nimittam".
+[END INSTRUCTIONS]
+
+User statement: ${question}${isImage ? '\n<img>\n' : ''}<end_of_turn>
+<start_of_turn>model
+`;
+    } else {
+      return `<|im_start|>system
+${persona}
+- Greet with a warm spiritual welcome as the Ai guide in ${targetLanguage}.
+- Be sweet, simple, and short.
+- Never say "I am Nimittam".
 <|im_end|>
 <|im_start|>user
-${question}<|im_end|>
+${question}${isImage ? '\n<img>\n' : ''}<|im_end|>
 <|im_start|>assistant
 `;
+    }
   }
 
-  return `<|im_start|>system
-${persona}
-
+  const instructions = `
 ### Instructions for a Perfect Answer:
 1. QUALITY: Provide a full, complete, and structured answer using the "Context" below. Avoid half-finished thoughts.
 2. STRUCTURE: Use bullet points or numbered lists for rules, facilities, or multiple items.
 3. NO REPETITION: Do not repeat sentences or facts. Consolidate similar information.
-4. HONESTY: If the information is not in the context, use your general wisdom to answer briefly but clearly state if specific details are missing.
+4. RAG & GENERAL QUESTIONS: If the question is about the context provided, STRICTLY base your answer ONLY on the Context. If the context lacks the answer, say you don't know based on the provided info. HOWEVER, if the user asks a normal general question (e.g., math, casual chat, general knowledge), answer it correctly using your general wisdom.
 5. CONCISENESS: Be detailed but not over-detailed. Stay relevant to the user's question.
 6. COMPLETENESS: Always double-check that your response is a complete thought before ending.
+7. SUGGESTED QUESTIONS: Based on your answer and the context, provide exactly 3 relevant follow-up questions for the user. These must be at the very end of your response, strictly following the delimiter [SUGGESTED_QUESTIONS] and separated by a pipe character |.
+8. LANGUAGE: Provide the entire answer and the suggested questions in ${targetLanguage}.
+
+Example (if Hindi): [SUGGESTED_QUESTIONS] प्रश्न 1 | प्रश्न 2 | प्रश्न 3
 
 ### Context:
 ${context || 'No specific data found for this query.'}
+`;
+
+  if (isGemma) {
+    return `<start_of_turn>user
+[SYSTEM INSTRUCTIONS]
+${persona}
+${instructions}
+[END INSTRUCTIONS]
+
+User Question: ${question}${isImage ? '\n<img>\n' : ''}<end_of_turn>
+<start_of_turn>model
+`;
+  } else {
+    return `<|im_start|>system
+${persona}
+${instructions}
 <|im_end|>
 <|im_start|>user
-${question}<|im_end|>
+${question}${isImage ? '\n<img>\n' : ''}<|im_end|>
 <|im_start|>assistant
 `;
+  }
 }

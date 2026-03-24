@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { View, FlatList, StyleSheet, Modal, Image, TouchableOpacity, Text, Alert } from 'react-native';
+import { useRef } from 'react';
 import TopBar from '../components/TopBar/TopBar';
 import MessageBubble from '../components/MessageBubble/MessageBubble';
 import MessageInputBar from '../components/MessageInputBar/MessageInputBar';
@@ -14,11 +15,13 @@ import { useTheme } from '../theme/ThemeContext';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 
-export default function ChatScreen({ occasion, onBack }) {
+export default function ChatScreen({ occasion, onBack, currentLanguage, onLanguageChange }) {
   const { theme } = useTheme();
+  const flatListRef = useRef(null);
   const [messages, setMessages] = useState([]);
   const [selectedImage, setSelectedImage] = useState(null); // Keep selectedImage state as it's used in Modal
   const [activeModel, setActiveModel] = useState(null);
+  const [suggestedQuestions, setSuggestedQuestions] = useState([]);
 
   useEffect(() => {
     if (occasion?.id) {
@@ -61,16 +64,29 @@ export default function ChatScreen({ occasion, onBack }) {
     setMessages(prev => [...prev, botPlaceholder]);
 
     try {
-      // Pass occasion to RAG logic
-      const reply = await getBotReply({ ...payload, occasion });
+      setSuggestedQuestions([]); // Clear previous suggestions
+      
+      // Request reply with streaming callback
+      const result = await getBotReply(
+        { ...payload, occasion, language: currentLanguage },
+        (token) => {
+          // Streaming callback: Update the placeholder bubble in real-time
+          setMessages(prev => 
+            prev.map(msg => msg.id === botId ? { ...msg, value: token } : msg)
+          );
+        }
+      );
+
+      const { text: finalReply, suggestedQuestions: newSuggestions } = result;
       
       const finalBotMessage = {
         ...botPlaceholder,
-        value: reply,
+        value: finalReply,
       };
 
       setMessages(prev => prev.map(msg => msg.id === botId ? finalBotMessage : msg));
       saveMessages(occasion.id, [...updatedMessages, finalBotMessage]);
+      setSuggestedQuestions(newSuggestions || []);
     } catch (error) {
       console.error('Error getting reply:', error);
       
@@ -111,6 +127,7 @@ export default function ChatScreen({ occasion, onBack }) {
         occasion={occasion}
         onBack={onBack}
         onModelStatusChange={checkModelStatus}
+        onLanguageChange={onLanguageChange}
       />
 
       <Modal visible={!!selectedImage} transparent={true} onRequestClose={() => setSelectedImage(null)}>
@@ -145,8 +162,26 @@ export default function ChatScreen({ occasion, onBack }) {
             />
           )}
           contentContainerStyle={styles.listContent}
+          initialNumToRender={20}
+          onContentSizeChange={() => flatListRef.current?.scrollToEnd({ animated: true })}
+          ref={flatListRef}
         />
       </View>
+
+      {suggestedQuestions.length > 0 && (
+        <View style={styles.suggestionsContainer}>
+          <Text style={[styles.suggestionLabel, { color: theme.text }]}>Click on the question you want to ask next:</Text>
+          {suggestedQuestions.map((question, index) => (
+            <TouchableOpacity 
+              key={index} 
+              style={[styles.suggestionButton, { borderColor: theme.primary }]}
+              onPress={() => sendMessage({ type: 'text', value: question })}
+            >
+              <Text style={[styles.suggestionText, { color: theme.primary }]}>{question}</Text>
+            </TouchableOpacity>
+          ))}
+        </View>
+      )}
 
       <MessageInputBar onSend={sendMessage} />
     </View>
@@ -171,6 +206,32 @@ const styles = StyleSheet.create({
     fontSize: 16,
     textAlign: 'center',
     opacity: 0.8,
+  },
+  suggestionsContainer: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    padding: 10,
+    justifyContent: 'center',
+    gap: 8,
+  },
+  suggestionLabel: {
+    fontSize: 14,
+    fontWeight: '600',
+    marginBottom: 8,
+    width: '100%',
+    textAlign: 'center',
+    opacity: 0.9,
+  },
+  suggestionButton: {
+    paddingHorizontal: 12,
+    paddingVertical: 6,
+    borderRadius: 20,
+    borderWidth: 1,
+    marginBottom: 4,
+  },
+  suggestionText: {
+    fontSize: 13,
+    fontWeight: '500',
   },
 });
 

@@ -6,12 +6,12 @@ import { OCCASIONS } from '../constants/occasions';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import TopBar from '../components/TopBar/TopBar';
 
-export default function HomeScreen({ onSelectOccasion, onClearChat }) {
+export default function HomeScreen({ onSelectOccasion, onClearChat, onLanguageChange }) {
   const { theme } = useTheme();
 
   return (
     <View style={[styles.container, { backgroundColor: theme.background }]}>
-      <TopBar onClearChat={onClearChat} />
+      <TopBar onClearChat={onClearChat} onLanguageChange={onLanguageChange} />
       
       <ScrollView 
         contentContainerStyle={styles.listContainer} 

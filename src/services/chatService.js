@@ -1,38 +1,62 @@
 import { initLlama } from 'llama.rn';
-import { getModelPath } from './modelService';
+import { getModelPath, getVisionModelPath, getActiveModel } from './modelService';
 import { getRelevantContext, formatPrompt, isGeneralGreeting } from './ragService';
 import RNFS from 'react-native-fs';
 
 let llamaContext = null;
+let currentLoadedModelId = null;
 
-export async function getBotReply(payload) {
-  const { value: question, occasion } = payload;
+export async function getBotReply(payload, onToken) {
+  const isImage = payload.type === 'image';
+  const question = isImage ? "Can you explain what is in this image and provide relevant details?" : payload.value;
+  const occasion = payload.occasion;
   const occasionId = occasion?.id;
   const occasionName = occasion?.name || "this occasion";
+  const targetLanguage = payload.language || 'English';
 
   try {
-    const modelPath = getModelPath();
+    const activeModelId = await getActiveModel();
+    if (!activeModelId) {
+      return { text: "No model active. Please select one from the menu.", suggestedQuestions: [] };
+    }
+
+    const modelPath = await getModelPath();
     const exists = await RNFS.exists(modelPath);
 
     if (!exists) {
-      return "Model file not found. Please download the model first.";
+      return { text: "Model file not found. Please download the model first.", suggestedQuestions: [] };
     }
 
-    // Initialize Llama context if not already done
-    if (!llamaContext) {
+    // Initialize Llama context if not already done, or if the model swapped
+    if (!llamaContext || currentLoadedModelId !== activeModelId) {
       try {
-        llamaContext = await initLlama({
+        if (llamaContext && llamaContext.release) {
+          await llamaContext.release();
+        }
+        llamaContext = null;
+
+        const isGemmaVision = activeModelId === 'gemma_vision';
+        const isGemma = activeModelId.startsWith('gemma');
+        
+        const initConfig = {
           model: modelPath,
           use_mlock: true,
-          n_ctx: 2048,
-          n_gpu_layers: 0, // 0 for CPU-only, or more if available
-        });
+          n_ctx: isGemma ? 4096 : 2048,
+          n_gpu_layers: 0,
+        };
+
+        if (isGemmaVision) {
+          const visionPath = await getVisionModelPath();
+          if (visionPath && await RNFS.exists(visionPath)) {
+            initConfig.mmproj = visionPath;
+          }
+        }
+
+        llamaContext = await initLlama(initConfig);
+        currentLoadedModelId = activeModelId;
       } catch (e) {
         console.error('Failed to initialize llama context:', e);
-        if (e.message.includes('install') || e.message.includes('null')) {
-          return "Native AI engine not found. You must stop your current build and run 'npx react-native run-android' again to link the new AI module.";
-        }
-        return `Initialization Error: ${e.message}`;
+        return { text: `Initialization Error: ${e.message}`, suggestedQuestions: [] };
       }
     }
 
@@ -46,28 +70,66 @@ export async function getBotReply(payload) {
     }
 
     // 3. Format Prompt
-    const prompt = formatPrompt(question, context, isGreeting, occasionName);
+    const prompt = formatPrompt(question, context, isGreeting, occasionName, activeModelId, isImage, targetLanguage);
 
-    // 4. Generate response
-    const { text } = await llamaContext.completion({
+    const completionParams = {
       prompt: prompt,
-      n_predict: isGreeting ? 48 : 512, // Increased for full, detailed answers
-      stop: ['<|im_start|>', '<|im_end|>', 'User:', 'Assistant:', '### Context:'],
-      temperature: isGreeting ? 0.7 : 0.15, // Low temperature for stability and factuality
-      repeat_penalty: 1.3, // Prevents loops while allowing natural detail
-      repeat_last_n: 128,   // Increased context for repetition check
+      n_predict: isGreeting ? 96 : 768, 
+      stop: activeModelId.startsWith('gemma') 
+        ? ['<end_of_turn>', '<start_of_turn>', 'User:', 'Assistant:', '### Context:']
+        : ['<|im_start|>', '<|im_end|>', 'User:', 'Assistant:', '### Context:'],
+      temperature: 0, 
+      repeat_penalty: 1.2, 
+      repeat_last_n: 64,   
+    };
+
+    if (isImage) {
+      const imageUri = payload.value.startsWith('file://') ? payload.value.replace('file://', '') : payload.value;
+      completionParams.images = [imageUri];
+    }
+
+    // 4. Generate response with streaming
+    let fullText = "";
+    const { text } = await llamaContext.completion(completionParams, (event) => {
+      if (event.token) {
+        fullText += event.token;
+        if (onToken) {
+          // If we encounter the suggested questions tag during streaming, hide it from the UI
+          const displayPart = fullText.split('[SUGGESTED_QUESTIONS]')[0];
+          onToken(displayPart.trim());
+        }
+      }
     });
 
-    return text.trim();
+    const trimmedText = text.trim();
+
+    // 5. Separate answer from suggested questions
+    let finalAnswer = trimmedText;
+    let suggestedQuestions = [];
+
+    if (trimmedText.includes('[SUGGESTED_QUESTIONS]')) {
+      const parts = trimmedText.split('[SUGGESTED_QUESTIONS]');
+      finalAnswer = parts[0].trim();
+      const suggestionsPart = parts[1] || "";
+      suggestedQuestions = suggestionsPart.split('|').map(q => q.trim()).filter(q => q.length > 0);
+    }
+
+    return {
+      text: finalAnswer,
+      suggestedQuestions: suggestedQuestions
+    };
   } catch (error) {
-    console.error('RAG Error:', error);
-    return `Error: ${error.message}`;
+    console.error('Chat Error:', error);
+    return {
+      text: `Error: ${error.message}`,
+      suggestedQuestions: []
+    };
   }
 }
 
 export async function isTransformersAvailable() {
    try {
-     const path = getModelPath();
+     const path = await getModelPath();
      return await RNFS.exists(path);
    } catch {
      return false;

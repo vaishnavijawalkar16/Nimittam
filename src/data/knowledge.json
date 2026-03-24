@@ -1,624 +1,286 @@
 [
-{
-"id": "NT_ID_001",
-"title": "Namokar Tirth Overview",
-"category": "history",
-"tags": ["introduction", "jain knowledge city", "nashik", "tirth"],
-"location": {
-"area": "Malsane village",
-"campus_zone": "Entry Zone",
-"map_hint": "Main entrance visible from Mumbai-Agra National Highway NH-3"
-},
-"content": [
-"Namokar Tirth is a prominent Jain pilgrimage site located in the Nashik district of Maharashtra.",
-"The site is conceptualized as a 'Jain Knowledge City' focusing on spiritual research and humanitarian service.",
-"It was established based on the vision of Acharya Shree 108 Devnandiji Gurudev.",
-"The Tirth serves as a research center for the vibrations and scientific effects of the Namokar Mantra."
-],
-"rules": [
-"Visitors must follow Jain ethical codes of conduct.",
-"Photography may be restricted in specific spiritual zones."
-],
-"facilities": [
-"Information desk",
-"Spiritual guidance center"
-],
-"suggested_questions": [
-"What is Namokar Tirth?",
-"Why is it called a Knowledge City?",
-"Who founded Namokar Tirth?"
-],
-"source_reference": [
-"Official Website",
-"Encyclopedia of Jainism",
-"The Namokar Tirth: An In-Depth Analysis"
-]
-},
-{
-"id": "NT_LOC_001",
-"title": "Geographical Location and Address",
-"category": "location",
-"tags": ["address", "malsane", "chandwad", "nh3", "highway"],
-"location": {
-"area": "Chandwad Taluka",
-"campus_zone": "Entry Zone",
-"map_hint": "Located at Malsane on the Nashik-Dhule Road"
-},
-"content": [
-"The official address is Namokar Tirth, Mumbai-Agra National Highway (NH-3), Malsane, Tal. Chandwad, Dist. Nashik, Maharashtra 423101.",
-"The Tirth is situated on a 40-acre plot of land.",
-"It is located approximately 52 km from Nashik city.",
-"The site is positioned directly on the Mumbai-Delhi National Highway No. 3."
-],
-"rules": [
-"Not applicable."
-],
-"facilities": [
-"Highway access",
-"Parking for visitors"
-],
-"suggested_questions": [
-"Where is Namokar Tirth located?",
-"What is the full address of the Tirth?",
-"How far is the Tirth from Nashik city?"
-],
-"source_reference": [
-"Official Website",
-"Encyclopedia of Jainism",
-"GoJainYatra"
-]
-},
-{
-"id": "NT_ADM_001",
-"title": "Founder Profile: Acharya Shree 108 Devnandiji Gurudev",
-"category": "administration",
-"tags": ["founder", "gurudev", "devnandi", "visionary"],
-"location": {
-"area": "Knowledge City",
-"campus_zone": "Spiritual Zone",
-"map_hint": "Administrative and Tyagi Niwas areas"
-},
-"content": [
-"The Tirth was conceptualized by Pragyashraman Srvodayee National Saint Saraswatacharya Shree 108 Devnandiji Gurudev.",
-"Gurudev was born as Mulayamsing in Shahrarh, Madhya Pradesh.",
-"He took Muni Diksha on March 31, 1982, in Hasan, Karnataka.",
-"He has authored more than 40 books, including Vastu Chintamani and Dev Shilpa.",
-"His vision integrates ancient ontological principles with modern social requirements."
-],
-"rules": [
-"Not applicable."
-],
-"facilities": [
-"Library of Gurudev's books",
-"Tyagi Niwas for ascetics"
-],
-"suggested_questions": [
-"Who is the founder of Namokar Tirth?",
-"What books has Acharya Devnandiji written?",
-"When did the founder take Muni Diksha?"
-],
-"source_reference": [
-"Small Parichay - Welcome to Namokar Tirtha",
-"Encyclopedia of Jainism"
-]
-},
-{
-"id": "NT_TMP_001",
-"title": "Samavsharan Temple (Bolta Samavsharan)",
-"category": "temple",
-"tags": ["temple", "samavsharan", "chandraprabhu", "animation", "architecture"],
-"location": {
-"area": "Main Temple Complex",
-"campus_zone": "Spiritual Zone",
-"map_hint": "Central massive structure visible from the highway"
-},
-"content": [
-"The Samavsharan is a massive temple replicating the divine preaching hall of Tirthankar Chandraprabhu Bhagwan.",
-"It is described as a 'Bolta Samavsharan' due to its use of modern technology.",
-"The structure features animation, music, and lighting to explain Jain principles.",
-"It is designed to hold approximately 3,000 consecrated idols by 2026."
-],
-"rules": [
-"Footwear must be removed before entry.",
-"Silence must be maintained inside the hall.",
-"Leather items are strictly prohibited."
-],
-"facilities": [
-"Audio-visual presentation",
-"Consecrated idols"
-],
-"suggested_questions": [
-"What is the Samavsharan at Namokar Tirth?",
-"Which Tirthankar is the Samavsharan dedicated to?",
-"What technology is used in the Bolta Samavsharan?"
-],
-"source_reference": [
-"Samavsharan - Welcome to Namokar Tirtha",
-"Official Website"
-]
-},
-{
-"id": "NT_EVT_001",
-"title": "2026 International Panchkalyanak Mahotsav",
-"category": "event",
-"tags": ["festival", "2026", "panchkalyanak", "kumbh mela", "event"],
-"location": {
-"area": "Entire Campus",
-"campus_zone": "Spiritual Zone",
-"map_hint": "Samavsharan and temporary festival grounds"
-},
-"content": [
-"The International Panchkalyanak Pratishthan Mahotsav is scheduled from February 6 to 25, 2026.",
-"The event is expected to attract 10 to 15 lakh devotees from India and abroad.",
-"Approximately 3,000 idols will undergo Pran Pratishtha (consecration) during this 20-day festival.",
-"The Maharashtra government has approved Rs 36.35 crore for infrastructure for this event."
-],
-"rules": [
-"Registration is mandatory for pilgrims seeking overnight stay.",
-"Strict adherence to event security protocols is required."
-],
-"facilities": [
-"Temporary medical units",
-"450 toilet blocks",
-"Helipad",
-"Drinking water tanks"
-],
-"suggested_questions": [
-"When is the next major festival at Namokar Tirth?",
-"How many devotees are expected in 2026?",
-"What is the purpose of the 2026 Mahotsav?"
-],
-"source_reference": [
-"The Week",
-"Times of India",
-"Govt approvals for Namokar Tirth"
-]
-},
-{
-"id": "NT_ACC_001",
-"title": "Dharamshala (Accommodation Facilities)",
-"category": "accommodation",
-"tags": ["stay", "rooms", "dharamshala", "ac", "non-ac", "booking"],
-"location": {
-"area": "Residential Area",
-"campus_zone": "Residential Zone",
-"map_hint": "Behind the main temple complex"
-},
-"content": [
-"The Tirth provides modern Dharamshala facilities for pilgrims.",
-"Attached Non A/C Rooms are available for Rs 500 (Capacity: 4 persons).",
-"Attached A/C Rooms are available for Rs 1,000 (Capacity: 4 persons).",
-"Attached Suite AC Rooms are available for Rs 1,500 (Capacity: 7 persons).",
-"Suite AC rooms feature two bathrooms for visitor convenience."
-],
-"rules": [
-"Check-in and check-out time is 12:00 PM.",
-"Only Jain and vegetarian Hindu pilgrims are allowed to stay.",
-"No refund is provided on cancellations."
-],
-"facilities": [
-"Lift",
-"RO Water",
-"Locker",
-"Generator backup",
-"Hot water"
-],
-"suggested_questions": [
-"How much does a room cost at Namokar Tirth?",
-"What are the check-in timings for the Dharamshala?",
-"Who is allowed to stay in the Tirth dharamshala?"
-],
-"source_reference": [
-"GoJainYatra",
-"Official Website"
-]
-},
-{
-"id": "NT_FOD_001",
-"title": "Bhojanshala (Dining Facilities)",
-"category": "food",
-"tags": ["food", "meals", "bhojanshala", "jain food", "sunset rules"],
-"location": {
-"area": "Dining Hall",
-"campus_zone": "Residential Zone",
-"map_hint": "Near the accommodation block"
-},
-"content": [
-"The Bhojanshala serves pure Jain vegetarian meals.",
-"Breakfast is served from sunrise (per Panchang) to 9:30 AM for Rs 40.",
-"Lunch is served from 12:30 PM to 2:00 PM for Rs 100.",
-"Dinner is served from 5:00 PM until sunset (per Panchang) for Rs 100.",
-"All dining follows strict Jain sunset rules."
-],
-"rules": [
-"Consumption of food after sunset is strictly prohibited.",
-"Root vegetables (Onion, Garlic, etc.) are not used in preparation.",
-"Wastage of food should be avoided."
-],
-"facilities": [
-"Filtered water",
-"Clean dining area"
-],
-"suggested_questions": [
-"What are the Bhojanshala timings?",
-"What is the cost of a meal at Namokar Tirth?",
-"Does the Tirth provide food after sunset?"
-],
-"source_reference": [
-"GoJainYatra",
-"Official Website"
-]
-},
-{
-"id": "NT_MED_001",
-"title": "Medical and Healthcare Services",
-"category": "medical",
-"tags": ["hospital", "ayurvedic", "mobile hospital", "health", "care"],
-"location": {
-"area": "Medical Wing",
-"campus_zone": "Service Zone",
-"map_hint": "North side of the campus"
-},
-"content": [
-"The Tirth features an Ayurvedic Hospital for traditional healthcare.",
-"Mobile hospital units are operated to serve rural and tribal populations.",
-"These services are part of the 'Service' (Seva) pillar of the Tirth's mission.",
-"Temporary medical units are set up during major festivals for emergency care."
-],
-"rules": [
-"Not applicable."
-],
-"facilities": [
-"Ayurvedic consultations",
-"Ambulance/Mobile unit",
-"Emergency first aid"
-],
-"suggested_questions": [
-"Is there a hospital at Namokar Tirth?",
-"What is a mobile hospital at the Tirth?",
-"What type of medical treatments are available?"
-],
-"source_reference": [
-"Official Website",
-"Govt nod for development plan"
-]
-},
-{
-"id": "NT_RUL_001",
-"title": "Mandatory Code of Conduct and Rules",
-"category": "rule",
-"tags": ["rules", "leather", "dress code", "conduct", "prohibition"],
-"location": {
-"area": "Entire Campus",
-"campus_zone": "Entry Zone",
-"map_hint": "Signages at main gate and temple entrances"
-},
-"content": [
-"Leather items such as shoes, belts, and bags are strictly forbidden inside temple premises.",
-"Modest and respectful clothing is required for all visitors.",
-"Consumption of alcohol, tobacco, and non-vegetarian food is strictly prohibited.",
-"Silence must be maintained in meditation and prayer areas.",
-"Mobile phones should be switched off or put on silent mode inside temples."
-],
-"rules": [
-"Strict leather prohibition.",
-"Zero tolerance for smoking or alcohol.",
-"Dress code: Shoulders and knees must be covered."
-],
-"facilities": [
-"Locker room for leather items",
-"Shoe stand"
-],
-"suggested_questions": [
-"Can I bring a leather belt into the temple?",
-"What is the dress code for Namokar Tirth?",
-"Is smoking allowed on the campus?"
-],
-"source_reference": [
-"Official Website",
-"GoJainYatra"
-]
-},
-{
-"id": "NT_TRN_001",
-"title": "How to Reach by Rail and Air",
-"category": "transport",
-"tags": ["train", "airport", "railway", "reach", "manmad", "ozar"],
-"location": {
-"area": "Nashik District",
-"campus_zone": "Entry Zone",
-"map_hint": "External transport links"
-},
-"content": [
-"The nearest major railway station is Manmad Junction, located 27 to 37 km away.",
-"Nashik Road Railway Station is approximately 52 km from the site.",
-"The nearest airport is Ozar Airport (Nashik), about 42 km away.",
-"Mumbai International Airport is 170 to 250 km from the Tirth."
-],
-"rules": [
-"Not applicable."
-],
-"facilities": [
-"Taxi services from stations (external)",
-"Bus connectivity via highway"
-],
-"suggested_questions": [
-"What is the nearest railway station to Namokar Tirth?",
-"Which airport is closest to the Tirth?",
-"How far is Manmad station from Namokar Tirth?"
-],
-"source_reference": [
-"How to Reach - Namokar Tirtha",
-"GoJainYatra"
-]
-},
-{
-"id": "NT_ARD_001",
-"title": "Aradhana Center and Massive Idols",
-"category": "temple",
-"tags": ["idols", "aradhana", "arihant", "siddha", "research", "vibrations"],
-"location": {
-"area": "Meditation Block",
-"campus_zone": "Spiritual Zone",
-"map_hint": "Located near the Samavsharan"
-},
-"content": [
-"The Aradhana Center is dedicated to the research and adoration of the Namokar Mahamantra.",
-"It houses monumental stone idols of the Pancha-Parameṣṭhi.",
-"The Arihant Parmeshti idol stands 46 feet tall.",
-"The Siddha and Acharya Parmeshti idols are 36 feet tall.",
-"The center facilitates research on the spiritual effects of mantra vibrations."
-],
-"rules": [
-"Silence is mandatory for meditation practitioners.",
-"No food items allowed inside the Aradhana center."
-],
-"facilities": [
-"Meditation hall",
-"Stone-carved idols"
-],
-"suggested_questions": [
-"What is the height of the Arihant idol at Namokar Tirth?",
-"What happens at the Aradhana Center?",
-"How many Parmeshti idols are there in the center?"
-],
-"source_reference": [
-"Aradhana Center - Namokar Tirtha",
-"Encyclopedia of Jainism"
-]
-},
-{
-"id": "NT_ATM_001",
-"title": "Prayashchit Mandir (Addiction Salvation Temple)",
-"category": "temple",
-"tags": ["atonement", "addiction", "healing", "prayashchit", "salvation"],
-"location": {
-"area": "Healing Zone",
-"campus_zone": "Spiritual Zone",
-"map_hint": "Peaceful corner of the spiritual zone"
-},
-"content": [
-"The Prayashchit Mandir is also known as the Addiction Salvation and Atonement Temple.",
-"It is designed as a 'spiritual hospital' to help visitors seek liberation from addictions.",
-"The temple provides a space for seeking forgiveness and spiritual cleansing.",
-"It focuses on psychological and spiritual well-being through penance and prayer."
-],
-"rules": [
-"Privacy of seekers must be respected.",
-"Consultation with resident guides is recommended."
-],
-"facilities": [
-"Atonement hall",
-"Counseling area"
-],
-"suggested_questions": [
-"What is the Prayashchit Mandir?",
-"How does the Tirth help with addiction?",
-"What is the purpose of the Atonement Temple?"
-],
-"source_reference": [
-"Addiction Salvation and Atonement Temple - Namokar Tirtha"
-]
-},
-{
-"id": "NT_JIN_001",
-"title": "Jinvani Upasana Kendra (Literature Center)",
-"category": "facility",
-"tags": ["books", "literature", "library", "jinvani", "scriptures"],
-"location": {
-"area": "Education Block",
-"campus_zone": "Education Zone",
-"map_hint": "Adjacent to the Student Hostel"
-},
-"content": [
-"Jinvani Upasana Kendra is a center dedicated to the study and preservation of Jain scriptures.",
-"It serves as a library and research hub for Jain literature.",
-"The center promotes the dissemination of knowledge as part of the Knowledge City vision.",
-"It houses rare and contemporary texts for scholars and pilgrims."
-],
-"rules": [
-"Library silence rules apply.",
-"Scriptures must be handled with utmost respect."
-],
-"facilities": [
-"Reading room",
-"Archival section"
-],
-"suggested_questions": [
-"Where can I read Jain books at the Tirth?",
-"What is Jinvani Upasana Kendra?",
-"Does the Tirth have a library?"
-],
-"source_reference": [
-"Official Website",
-"The Namokar Tirth: An In-Depth Analysis"
-]
-},
-{
-"id": "NT_EDU_001",
-"title": "Education Center and Hostel",
-"category": "facility",
-"tags": ["education", "hostel", "students", "learning", "knowledge city"],
-"location": {
-"area": "Residential North",
-"campus_zone": "Education Zone",
-"map_hint": "Near the Tyagi Niwas"
-},
-"content": [
-"The Education Center provides spiritual and modern learning opportunities.",
-"A dedicated Student Hostel is available within the campus.",
-"It supports resident students pursuing Jain studies and research.",
-"These facilities fulfill the 'Education' (Shiksha) pillar of the Tirth's ideology."
-],
-"rules": [
-"Hostel residents must follow campus timings.",
-"Discipline in study areas is mandatory."
-],
-"facilities": [
-"Classrooms",
-"Student accommodation"
-],
-"suggested_questions": [
-"Does Namokar Tirth have a school or college?",
-"Is there a hostel for students at the Tirth?",
-"What kind of education is provided at the Tirth?"
-],
-"source_reference": [
-"Official Website",
-"Small Parichay"
-]
-},
-{
-"id": "NT_ANC_001",
-"title": "Animal Care and Veterinary Services",
-"category": "animal_care",
-"tags": ["animals", "veterinary", "ahimsa", "compassion", "service"],
-"location": {
-"area": "Service Wing",
-"campus_zone": "Service Zone",
-"map_hint": "Edge of the campus service area"
-},
-"content": [
-"The Tirth vision includes veterinary care as an expression of Ahimsa (non-violence).",
-"Services are provided for the treatment and welfare of animals.",
-"This aligns with the model of providing care for all living beings.",
-"Specific animal welfare initiatives are scaled during major festivals."
-],
-"rules": [
-"Harm to animals on campus is strictly forbidden."
-],
-"facilities": [
-"Veterinary clinic",
-"Animal shelter area"
-],
-"suggested_questions": [
-"Does the Tirth care for animals?",
-"What veterinary services are available at Namokar Tirth?",
-"How is Ahimsa practiced toward animals here?"
-],
-"source_reference": [
-"Official Website",
-"Ideology - Namokar Tirtha"
-]
-},
-{
-"id": "NT_INF_001",
-"title": "General Visitor Infrastructure",
-"category": "facility",
-"tags": ["parking", "water", "sanitation", "toilets", "electricity"],
-"location": {
-"area": "Parking and Utility Zones",
-"campus_zone": "Parking Zone",
-"map_hint": "Near the main entry and residential zones"
-},
-"content": [
-"Permanent infrastructure includes concrete roads and protective walls.",
-"Temporary festival arrangements include 450 toilet blocks.",
-"Drinking water tanks and power supply infrastructure are provided.",
-"The campus is equipped with CCTV surveillance for security.",
-"A helipad and boating facilities are planned for future development."
-],
-"rules": [
-"Park vehicles only in designated areas.",
-"Littering on roads or pathways is prohibited."
-],
-"facilities": [
-"Parking areas",
-"Toilet blocks",
-"Security control room"
-],
-"suggested_questions": [
-"Is there parking at Namokar Tirth?",
-"Are there clean toilets for visitors?",
-"Is the campus under CCTV surveillance?"
-],
-"source_reference": [
-"The Week",
-"Times of India",
-"Govt approvals"
-]
-},
-{
-"id": "NT_TRT_001",
-"title": "Namokar Tirth Trust and Administration",
-"category": "administration",
-"tags": ["trust", "management", "committee", "office"],
-"location": {
-"area": "Admin Block",
-"campus_zone": "Residential Zone",
-"map_hint": "Near the Dharamshala check-in desk"
-},
-"content": [
-"The pilgrimage is managed by a dedicated trust under the guidance of Acharya Devnandiji.",
-"Administrative offices handle registration for festivals and room bookings.",
-"The trust oversees the development of the 40-acre campus.",
-"Contact persons include Br. Vaishali Didi and Rakesh Bhaiya for administrative support."
-],
-"rules": [
-"Prior appointment is needed for official meetings.",
-"Respect administrative staff and volunteers."
-],
-"facilities": [
-"Administrative office",
-"Booking counter"
-],
-"suggested_questions": [
-"Who manages Namokar Tirth?",
-"Where is the administrative office?",
-"Who can I contact for room bookings?"
-],
-"source_reference": [
-"About Us - Namokar Teerth",
-"Official Website"
-]
-},
-{
-"id": "NT_OOS_001",
-"title": "Out of Scope Handler",
-"category": "out_of_scope",
-"tags": ["unrelated", "general", "other"],
-"location": {
-"area": "Not applicable",
-"campus_zone": "Not applicable",
-"map_hint": "Not applicable"
-},
-"content": [
-"I am only designed to guide visitors about Namokar Tirth, Nashik.",
-"Please ask questions related to this pilgrimage site."
-],
-"rules": [
-"Not applicable."
-],
-"facilities": [
-"Not applicable."
-],
-"suggested_questions": [
-"Can you tell me about the weather in Delhi?",
-"How to cook pasta?",
-"Who won the cricket match yesterday?"
-],
-"source_reference": [
-"System Configuration"
-]
-}
+  {
+    "id": "NT_OVERVIEW",
+    "title": "Namokar Tirth: Overview and Core Philosophy",
+    "category": "history",
+    "tags": ["introduction", "jain knowledge city", "nashik", "panch parmeshti", "tirth", "foundation"],
+    "location": {
+      "area": "Malsane village, NH-3",
+      "campus_zone": "Entry Zone",
+      "map_hint": "Main entrance visible from Mumbai-Agra National Highway NH-3"
+    },
+    "content": [
+      "Namokar Tirth is a prominent Jain pilgrimage site and 'Jain Knowledge City' spread across 40 to 47 acres in the Nashik district of Maharashtra.",
+      "The foundation and land worship ceremony for the Tirth took place on February 8, 2014.",
+      "The entire site is envisioned as a physical representation of the Panch Parmeshti (Arihant, Siddha, Acharya, Upadhyaya, and Sadhu Parmeshti), aiming to embody their spiritual properties.",
+      "The core philosophy is based on the Ratnatraya (the three jewels of Jainism: Right Faith, Right Knowledge, and Right Conduct).",
+      "It fosters a 'golden triangle' of Faith, Discipline, and Care for all living beings.",
+      "The Tirth serves as a research center for studying the vibrations, scientific effects, and spiritual salvation power of the Namokar Mantra."
+    ],
+    "rules": [
+      "Visitors must follow traditional Jain ethical codes of conduct.",
+      "Photography may be restricted in specific inner spiritual zones such as the meditation halls."
+    ],
+    "facilities": [
+      "Information and registration desk at the entry",
+      "Free rickshaw services provided for the elderly, women, and children to navigate the large 47-acre campus",
+      "Spiritual guidance center"
+    ],
+    "suggested_questions": [
+      "What is the philosophy behind Namokar Tirth?",
+      "When was the foundation laid?",
+      "What is the 'golden triangle'?"
+    ],
+    "source_reference": ["Official Website", "Encyclopedia of Jainism"]
+  },
+  {
+    "id": "NT_LOCATION",
+    "title": "Geographical Location, Accessibility, and Timings",
+    "category": "location",
+    "tags": ["address", "malsane", "chandwad", "highway", "timings", "transport", "wheelchair"],
+    "location": {
+      "area": "Chandwad Taluka",
+      "campus_zone": "Entry Zone",
+      "map_hint": "Located at Malsane on the Nashik-Dhule Road"
+    },
+    "content": [
+      "The official address is Namokar Tirth, Mumbai-Agra National Highway (NH-3), Malsane, Tal. Chandwad, Dist. Nashik, Maharashtra 423101.",
+      "The site is located approximately 52 km from Nashik city and is positioned directly on the highway for easy access.",
+      "The nearest major railway station is Manmad Junction (27-37 km away), and the closest airport is Ozar Airport in Nashik (42 km away).",
+      "The Tirth campus is officially open 24 hours a day for pilgrims, though specific facilities within the campus have designated operational hours.",
+      "The official contact number for inquiries is +91-9404006108."
+    ],
+    "rules": [
+      "Vehicles must be parked only in the designated visitor parking area to maintain campus serenity."
+    ],
+    "facilities": [
+      "Wheelchair accessible entrances and exits",
+      "Extensive parking for buses and private vehicles",
+      "Highway access and waiting areas for external taxis and buses"
+    ],
+    "suggested_questions": [
+      "Where is Namokar Tirth located?",
+      "Are there wheelchair facilities?",
+      "What are the visiting hours?"
+    ],
+    "source_reference": ["Justdial", "Official Website", "Google Maps"]
+  },
+  {
+    "id": "NT_FOUNDER",
+    "title": "Founder Profile: Acharya Shree 108 Devnandiji Gurudev",
+    "category": "administration",
+    "tags": ["founder", "gurudev", "devnandi", "visionary", "books", "author"],
+    "location": {
+      "area": "Knowledge City",
+      "campus_zone": "Spiritual Zone",
+      "map_hint": "Administrative and Tyagi Niwas areas"
+    },
+    "content": [
+      "The Tirth was conceptualized from the deep contemplation of the Maha Mantra by Param Pujya Pragyashraman Srvodayee National Saint Saraswatacharya Shree 108 Devnandiji Gurudev.",
+      "Gurudev was born as Mulayamsing in Shahrarh, Madhya Pradesh, and took his Muni Diksha on March 31, 1982, in Hasan, Karnataka.",
+      "He is a prolific scholar, having authored more than 40 books, including renowned texts like 'Vastu Chintamani' and 'Dev Shilpa'.",
+      "His vision integrates ancient ontological Jain principles with modern social requirements, focusing on non-violence and humanitarian service."
+    ],
+    "rules": [
+      "Respectful silence is required when approaching ascetic residential zones (Tyagi Niwas)."
+    ],
+    "facilities": [
+      "Library containing Gurudev's extensive authored books",
+      "Tyagi Niwas for ascetics and visiting monks"
+    ],
+    "suggested_questions": [
+      "Who founded Namokar Tirth?",
+      "What books has Acharya Devnandiji written?",
+      "When did Gurudev take Muni Diksha?"
+    ],
+    "source_reference": ["Namokar Tirtha Literature", "Encyclopedia of Jainism"]
+  },
+  {
+    "id": "NT_TEMPLES",
+    "title": "Samavsharan, Guru Mandir, and Aradhana Center",
+    "category": "temple",
+    "tags": ["temple", "samavsharan", "chandraprabhu", "padmasana", "guru mandir", "idols"],
+    "location": {
+      "area": "Main Temple Complex",
+      "campus_zone": "Spiritual Zone",
+      "map_hint": "Central massive structures visible from the highway"
+    },
+    "content": [
+      "The main complex houses a spectacular temple featuring a 32-foot high statue of Bhagwan Chandraprabhu in the meditative Padmasana posture on the first floor.",
+      "The site includes a designated 'Guru Mandir' dedicated to honoring great historical Jain gurus and spiritual leaders.",
+      "The 'Bolta Samavsharan' is a technological marvel—a massive temple replicating the divine preaching hall, using animation, music, and lighting to explain Jain principles.",
+      "The Aradhana Center houses monumental stone idols of the Pancha-Parameṣṭhi, including a majestic 46-foot tall Arihant Parmeshti idol and 36-foot tall Siddha and Acharya idols."
+    ],
+    "rules": [
+      "Footwear and all leather items must be removed and stored before entry.",
+      "Total silence must be maintained for meditation practitioners in the Aradhana center.",
+      "No food items or drinks are allowed inside any of the temple sanctuaries."
+    ],
+    "facilities": [
+      "Audio-visual presentation systems in the Samavsharan",
+      "Meditation halls",
+      "Shoe and bag locker rooms"
+    ],
+    "suggested_questions": [
+      "How tall is the Bhagwan Chandraprabhu statue?",
+      "What is the Bolta Samavsharan?",
+      "Are there idols for the Panch Parmeshti?"
+    ],
+    "source_reference": ["YouTube Documentaries", "Official Website"]
+  },
+  {
+    "id": "NT_EVENTS",
+    "title": "Major Events and Panchkalyanak Mahotsav",
+    "category": "event",
+    "tags": ["festival", "2026", "panchkalyanak", "monks", "event", "consecration"],
+    "location": {
+      "area": "Event Grounds",
+      "campus_zone": "Campus Wide",
+      "map_hint": "Temporary infrastructures and the 22,000 sq ft hall"
+    },
+    "content": [
+      "The Tirth hosts monumental spiritual gatherings, highlighted by the International Panchkalyanak Pratishthan Mahotsav scheduled from February 6 to 25, 2026.",
+      "This specific 20-day festival was designed to attract over 1.2 million devotees globally and brought together over 400 Digambar Jain monks.",
+      "During such festivals, approximately 3,000 newly crafted idols undergo Pran Pratishtha (the sacred consecration ceremony).",
+      "For large events, a massive 22,000 square foot pillarless hall is utilized to accommodate the massive congregations."
+    ],
+    "rules": [
+      "Early registration is mandatory for pilgrims seeking overnight stay or meals during major festivals.",
+      "Strict adherence to crowd control and event security protocols is required."
+    ],
+    "facilities": [
+      "22,000 sq ft pillarless congregation hall",
+      "Temporary medical units and ambulances (during festivals)",
+      "450 temporary toilet blocks for sanitation (during festivals)"
+    ],
+    "suggested_questions": [
+      "When is the Panchkalyanak Mahotsav?",
+      "How many monks attend the festival?",
+      "What is the capacity of the main hall?"
+    ],
+    "source_reference": ["Esakal News", "Loksatta", "Times of India"]
+  },
+  {
+    "id": "NT_INFRA",
+    "title": "Accommodation, Dining, and Future Infrastructure",
+    "category": "facility",
+    "tags": ["stay", "rooms", "dharamshala", "food", "bhojanshala", "helipad", "boating"],
+    "location": {
+      "area": "Residential and Utility Zones",
+      "campus_zone": "Residential Zone",
+      "map_hint": "Behind the main temple complex and borders of the campus"
+    },
+    "content": [
+      "The Tirth provides extensive accommodation via a Deluxe Dharamshala containing over 200 rooms, including AC, Non-AC, and suite options with hot water, lifts, and backup generators.",
+      "A Bhojanshala (dining hall) operates under strict Jain sunset rules (no food after sunset, no root vegetables), providing breakfast, lunch, and dinner to pilgrims.",
+      "A massive State Government approved development plan worth Rs 36.35 crore is currently active to add permanent concrete roads and advanced sanitation.",
+      "Future luxury implementations under construction include a helipad for VIP/Emergency access, boating facilities, and an extremely well-equipped modern tourist canteen."
+    ],
+    "rules": [
+      "Check-in and check-out time for rooms is standard 12:00 PM.",
+      "Consumption of food after sunset is strictly prohibited by Tirth policy.",
+      "Only Jain and vegetarian Hindu pilgrims are permitted to stay in the residential blocks."
+    ],
+    "facilities": [
+      "Deluxe Dharmashala (over 200 rooms)",
+      "Pure vegetarian Bhojanshala with filtered RO water",
+      "Future/Upcoming: Boating facilities and Helipad",
+      "Event halls and banquet spaces with in-house catering (for Dharmic events)"
+    ],
+    "suggested_questions": [
+      "Does Namokar Tirth have rooms for stay?",
+      "Are there dining facilities available?",
+      "Is there a helipad on the campus?"
+    ],
+    "source_reference": ["Mid-Day", "Justdial", "Official Website"]
+  },
+  {
+    "id": "NT_SERVICES",
+    "title": "Knowledge City, Medical, and Animal Services",
+    "category": "medical",
+    "tags": ["hospital", "ayurvedic", "mobile hospital", "veterinary", "ahimsa", "education"],
+    "location": {
+      "area": "Service and Education Wings",
+      "campus_zone": "Service Zone",
+      "map_hint": "North and Edge sides of the campus"
+    },
+    "content": [
+      "As a designated 'Jain Knowledge City', future expansions include a Jain Gurukul, secular schools, colleges, ITIs, and specialized women's training centers.",
+      "The Tirth currently operates an Ayurvedic Hospital providing traditional healthcare, and dispatches Mobile Hospital Units to serve rural and tribal populations nearby.",
+      "Embodying the Jain principle of Ahimsa (non-violence), the Tirth provides veterinary care clinics and animal shelters for the welfare of local wildlife and livestock.",
+      "There is also a Prayashchit Mandir (Addiction Salvation Temple) acting as a spiritual hospital for those seeking psychological well-being and freedom from addictions."
+    ],
+    "rules": [
+      "Treat all animals on the campus with strict compassion; harming animals is severely punished.",
+      "Maintain the privacy of seekers utilizing the Prayashchit Mandir counseling."
+    ],
+    "facilities": [
+      "Ayurvedic Hospital",
+      "Mobile Ambulance Units",
+      "Veterinary clinic and shelter",
+      "Jinvani Upasana Kendra (Library and Literature Study Center)"
+    ],
+    "suggested_questions": [
+      "Is there a hospital at the Tirth?",
+      "What education facilities are planned?",
+      "Does the Tirth treat animals?"
+    ],
+    "source_reference": ["Official Plans", "Ahimsaiyatra"]
+  },
+  {
+    "id": "NT_RULES",
+    "title": "Mandatory Code of Conduct and Restrictions",
+    "category": "rule",
+    "tags": ["rules", "leather", "dress code", "conduct", "prohibition", "alcohol", "smoking"],
+    "location": {
+      "area": "Entire Campus",
+      "campus_zone": "Entry Zone",
+      "map_hint": "Signages at main gate and temple entrances"
+    },
+    "content": [
+      "The entire Namokar Tirth operates on strict Jain principles to maintain its spiritual purity.",
+      "Leather items of any kind (such as shoes, belts, wallets, and bags) are strictly forbidden inside the temple and main spiritual premises.",
+      "Modest, respectful clothing is required for all visitors (shoulders and knees must be completely covered).",
+      "Consumption of alcohol, tobacco products (smoking/chewing), and any non-vegetarian food is strictly and permanently prohibited on the 47-acre campus."
+    ],
+    "rules": [
+      "Zero tolerance for leather goods inside temples.",
+      "Zero tolerance for smoking, alcohol, or non-vegetarian items.",
+      "Mobile phones should be switched off or put on silent mode inside all spiritual complexes."
+    ],
+    "facilities": [
+      "Secure locker rooms strictly for storing leather items and electronics",
+      "Dedicated shoe stands outside all temples"
+    ],
+    "suggested_questions": [
+      "Can I bring a leather belt into the temple?",
+      "What is the dress code for Namokar Tirth?",
+      "Are mobile phones allowed?"
+    ],
+    "source_reference": ["Tirth Regulations"]
+  },
+  {
+    "id": "NT_OUTOFSCOPE",
+    "title": "Out of Scope Handler",
+    "category": "out_of_scope",
+    "tags": ["unrelated", "general", "other"],
+    "location": {
+      "area": "Not applicable",
+      "campus_zone": "Not applicable",
+      "map_hint": "Not applicable"
+    },
+    "content": [
+      "I am specifically designed to function as 'Nimittam', the spiritual guide providing detailed information about the Namokar Tirth in Nashik.",
+      "For inquiries unrelated to this pilgrimage site Jain philosophy, or the facilities herein, please refer to general resources, though I can answer general knowledge questions using my base capabilities."
+    ],
+    "rules": [
+      "Politely deflect queries completely unrelated to the Tirth unless they fall under general acceptable chat."
+    ],
+    "facilities": [],
+    "suggested_questions": [
+      "Can you tell me about the weather in Delhi?",
+      "How do I cook pasta?"
+    ],
+    "source_reference": ["System Configuration"]
+  }
 ]
